@@ -23,6 +23,20 @@ header a {
     text-decoration: none;
     font-size: 20px;
     font-family: Ubuntu;
+    /* Slow fade in on color change */
+    transition: color 0.3s ease;
+    /* Slight size increase */
+
+}
+
+
+/* both of these make logo increase size on hover */
+#logo-link img{
+    transition: transform 0.3s ease;
+}
+
+#logo-link img:hover {
+    transform: scale(1.05);
 }
 
 #acontainer {
@@ -49,14 +63,13 @@ header a {
     top: 0;
 }
 
+/* When hovered with cursor, fades to grey & growa */
 header a:hover {
-    color: rgb(177, 173, 173);
+    color: #a3a3a3;
+    transform: font-size(1.05em);
 }
 
-header a.active {
-    background-color: #fff700;
-    color: white;
-}
+
 
 video {
     width: 440px;
@@ -123,11 +136,19 @@ footer {
     font-family: Ubuntu;
     font-size: 16px;
     margin-top: 20px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease;
 }
+
+
+
+
+
 
 #contactbutton2:hover {
     background-color: #ffbf1c;
     color: #101010;
+    transform: scale(1.05);
 }
 
 footer {
@@ -138,6 +159,8 @@ footer {
 #bottomp {
     padding-top: 50px;
 }
+
+
 
 h2 {
     color: rgb(255, 255, 255);
@@ -155,7 +178,8 @@ li {
 }
 
 
-  
+  /* From lines 158 to 211, most was from a tutorial! */
+  /* Speed of slide */
   @keyframes slide {
     from {
       transform: translateX(0);
@@ -169,6 +193,7 @@ li {
     padding-bottom: 50px;
     padding-top: 20px;
 }
+
   .logos {
     overflow: hidden;
     padding: 60px 0;
@@ -188,6 +213,7 @@ li {
     z-index: 2;
   }
   
+  /* Creates a gradient */
   .logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), #0e0e0e);
@@ -210,15 +236,40 @@ li {
     margin: 0 40px;
   }
 
+   
   footer {
     padding-top: 50px;
   }
 
-
+    /* This is here to remove the JotForm watermark by hiding it */
   #iframe-container {
     max-height: 1000px; 
     overflow: hidden;
     position: relative;
 }
+
+
+
+
+
+
+/* Tutorial Followed! */
+
+body {
+    /* Everything under body starts with an opacity of 0. */   
+    opacity: 0;            
+    /* Do fadeIn */
+    animation: fadeIn 1s ease forwards;   
+  }
+  
+  /* In one second, take the opacity of body from 0 to 1 */
+  @keyframes fadeIn { 
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   
