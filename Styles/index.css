@@ -76,6 +76,7 @@ video {
     height: 440px;
     border-radius: 30px;
     overflow: hidden;
+    border: 1px solid #ffbf1c;
 }
 
 #video {
@@ -117,8 +118,8 @@ footer {
 }
 
 #semibig {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 #smaller {
