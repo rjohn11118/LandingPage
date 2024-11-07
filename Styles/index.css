@@ -281,7 +281,8 @@ a {
 a i {
     font-size: 2em; 
     color: white;   
-    padding-right: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 a i:hover {
