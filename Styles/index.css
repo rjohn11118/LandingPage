@@ -272,4 +272,20 @@ body {
     }
   }
 
+a {
+    text-decoration: none; 
+    outline: none;         
+}
+
+
+a i {
+    font-size: 2em; 
+    color: white;   
+    padding-right: 15px;
+}
+
+a i:hover {
+    color: grey;    
+}
+
   
